@@ -1,0 +1,23 @@
+{
+  "name": "taxishareserver",
+  "version": "1.0.0",
+  "description": "Parte de servidor para la aplicación de compartir taxis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antalag/AngularEditor/"
+  },
+  "license" : "SEE LICENSE IN LICENSE",
+  "author": "Angel Talaverón",
+  "license": "ISC",
+  "dependencies": {
+  "mongodb": "^2.2.16",
+  "mongoose": "~3.6.11",
+  "express": "^4.7.1",
+  "method-override": "^2.1.2",
+  "body-parser": "^1.5.1"
+  }
+}
