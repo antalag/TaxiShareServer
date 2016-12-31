@@ -17,8 +17,16 @@ router.get('/', function(req, res) {
    res.send("Hello World!");
 });
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  next();
+});
+
 app.use(router);
 
+ 
 mongoose.connect('mongodb://localhost/user', function(err, res) {  
   if(err) {
     console.log('ERROR: connecting to Database. ' + err);
