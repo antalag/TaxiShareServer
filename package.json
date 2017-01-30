@@ -10,14 +10,14 @@
     "type": "git",
     "url": "https://github.com/antalag/AngularEditor/"
   },
-  "license" : "SEE LICENSE IN LICENSE",
-  "author": "Angel Talaverón",
   "license": "ISC",
+  "author": "Angel Talaverón",
   "dependencies": {
-  "mongodb": "^2.2.16",
-  "mongoose": "~3.6.11",
-  "express": "^4.7.1",
-  "method-override": "^2.1.2",
-  "body-parser": "^1.5.1"
+    "body-parser": "^1.5.1",
+    "express": "^4.7.1",
+    "method-override": "^2.1.2",
+    "mongodb": "^2.2.16",
+    "mongoose": "~3.6.11",
+    "socket.io": "^1.7.2"
   }
 }

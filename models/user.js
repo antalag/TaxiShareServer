@@ -6,7 +6,10 @@ var userSchema = new Schema({
   name:    { type: String },
   email:     { type: String },
   password:  { type: String },
-  location:   { type: Array },
+  location:   {
+    type: Array,  // [<longitude>, <latitude>]
+    index: '2dsphere'      // create the geospatial index
+    },
   active:  { type: Boolean },
   description:    { type: String}
 });
